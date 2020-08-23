@@ -1,5 +1,9 @@
 ({
     name: "HTTP", // Category Name
+    description: "GET POST PUT to REST API",
+    author: "microBlock",
+    category: "Communication",
+    version: "1.0.0",
     icon: "/static/icon.png", // Category icon
     color: "#2ECC71", // Category color (recommend some blocks color)
     blocks: [ // Blocks in Category
