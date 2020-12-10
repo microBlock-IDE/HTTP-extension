@@ -4,8 +4,7 @@ Blockly.Python['http_request'] = function(block) {
   var value_data = Blockly.Python.valueToCode(block, 'data', Blockly.Python.ORDER_ATOMIC);
   var value_header = Blockly.Python.valueToCode(block, 'header', Blockly.Python.ORDER_ATOMIC);
 
-  Blockly.Python.addUploadModule("urequests.py");
-  Blockly.Python.definitions_['import_machine'] = 'import urequests';
+  Blockly.Python.definitions_['import_urequests'] = 'import urequests';
 
   var code = `http_response = urequests.request("${dropdown_method}", ${value_url}, ${value_data}, ${value_header})\n`;
   return code;
