@@ -6,7 +6,7 @@ Blockly.Python['http_request'] = function(block) {
 
   Blockly.Python.definitions_['import_urequests'] = 'import urequests';
 
-  var code = `http_response = urequests.request("${dropdown_method}", ${value_url}, ${value_data}, ${value_header})\n`;
+  var code = `http_response = urequests.request("${dropdown_method}", ${value_url}, ${value_data}, None, ${value_header})\n`;
   return code;
 };
 

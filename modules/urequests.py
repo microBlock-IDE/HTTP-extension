@@ -62,7 +62,7 @@ def request(method, url, data=None, json=None, headers={}, stream=None):
         for k in headers:
             # s.write(k)
             # s.write(b": ")
-            s.write(headers[k])
+            s.write(bytes(headers[k]))
             s.write(b"\r\n")
         if json is not None:
             assert data is None
