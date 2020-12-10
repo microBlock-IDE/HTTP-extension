@@ -12,7 +12,7 @@
                 <block type="http_request">
                     <value name="url">
                         <shadow type="text">
-                            <field name="TEXT">https://www.microblock.app/about.html</field>
+                            <field name="TEXT">https://microblock.app/about.html</field>
                         </shadow>
                     </value>
                     <value name="data">
