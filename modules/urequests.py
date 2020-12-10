@@ -29,7 +29,7 @@ class Response:
         return str(self.content, self.encoding)
 
 
-def request(method, url, data=None, json=None, headers={}, stream=None):
+def request(method, url, data=None, json=None, headers=(), stream=None):
     try:
         proto, dummy, host, path = url.split("/", 3)
     except ValueError:
@@ -60,10 +60,7 @@ def request(method, url, data=None, json=None, headers={}, stream=None):
             s.write(b"Host: %s\r\n" % host)
         # Iterate over keys to avoid tuple alloc
         for k in headers:
-            # s.write(k)
-            # s.write(b": ")
-            s.write(bytes(headers[k]))
-            s.write(b"\r\n")
+            s.write(k.encode() + b"\r\n")
         if json is not None:
             assert data is None
             import ujson
