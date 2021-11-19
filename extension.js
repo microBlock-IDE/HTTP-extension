@@ -37,5 +37,8 @@
         "http_get_data_text",
         "http_get_data_number",
         "http_is_ok"
+    ],
+    chip: [
+        "ESP32" // Chip support
     ]
 });
