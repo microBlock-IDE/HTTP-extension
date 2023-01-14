@@ -3,7 +3,7 @@
     description: "GET POST PUT to REST API",
     author: "microBlock",
     category: "Communication",
-    version: "1.0.0",
+    version: "1.1.0",
     icon: "/static/icon.png", // Category icon
     color: "#2ECC71", // Category color (recommend some blocks color)
     blocks: [ // Blocks in Category
@@ -39,6 +39,7 @@
         "http_is_ok"
     ],
     chip: [
-        "ESP32" // Chip support
+        "ESP32", // Chip support
+        "RP2-WiFi"
     ]
 });
